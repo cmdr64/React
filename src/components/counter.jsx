@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
     render() { 
-        return <h1>i do not think react is smart</h1>;
+        return (
+            <div>
+                <h1>it's true</h1>
+                <button>i do not think react is smart</button>
+            </div>
+        );
     }
 }
 
