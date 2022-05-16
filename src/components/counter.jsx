@@ -8,8 +8,8 @@ class Counter extends Component {
     render() { 
         return (
             <React.Fragment>
-                <h1>it's true</h1>
-                <button>react be dumb</button>
+                <h1>reacto presto</h1>
+                <button>increment</button>
             </React.Fragment>
         );
     }
