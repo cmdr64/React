@@ -8,10 +8,18 @@ class Counter extends Component {
     render() { 
         return (
             <React.Fragment>
-                <h1>reacto presto</h1>
-                <button>increment</button>
+                <span>{this.formatCount()}</span>
+                <button onClick={this.state+=1}>ADD NUMBA</button>
             </React.Fragment>
         );
+    }
+
+    formatCount() {
+        const { count } = this.state; //not sure what this does
+        if( this.state.count === 0 )
+            return <h1>Zero</h1>;
+        else
+            return this.state.count;
     }
 }
 
