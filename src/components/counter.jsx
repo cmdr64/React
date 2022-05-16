@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+    state = {
+        count: 0,
+        address: "bleh"
+    };
     render() { 
         return (
             <React.Fragment>
                 <h1>it's true</h1>
-                <button>i do not think react is smart</button>
+                <button>react be dumb</button>
             </React.Fragment>
         );
     }
