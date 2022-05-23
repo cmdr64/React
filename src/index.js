@@ -1,8 +1,16 @@
 
+//react
 import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css'
-import Counter from './components/counter'
+import ReactDOM from 'react-dom'
+import { createRoot } from "react-dom/client";
 
-const element = <h1>BOOBOO</h1>;
-ReactDOM.render(<Counter />, document.getElementById('root'));
+//third party
+import 'bootstrap/dist/css/bootstrap.css'
+
+//my components
+import ParkingTable from './components/parkingTable'
+import App from './components/app';
+
+//lets do it
+const root = createRoot( document.getElementById('root') );
+root.render( <App /> );
