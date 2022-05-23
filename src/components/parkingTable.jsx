@@ -45,14 +45,6 @@ class ParkingTable extends Component {
             </table>
         );
     }
-
-    formatCount() {
-        const { count } = this.state; //not sure what this does
-        if( this.state.count === 0 )
-            return <h1>Zero</h1>;
-        else
-            return this.state.count;
-    }
 }
 
 export default ParkingTable;
