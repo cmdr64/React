@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 
 class ParkingTable extends Component {
 
+    constructor() {
+        super();
+        setInterval( () => { //to update data
+            this.setState( { rows:[...this.state.rows, this.createRow( "a", "a", "a", "a" )] } );
+        }, 5000 );
+    }
+
     createRow( vehicle, curbSpot, enterTime, exitTime ) {
         return {vehicle: vehicle,
                 curbSpot: curbSpot,
